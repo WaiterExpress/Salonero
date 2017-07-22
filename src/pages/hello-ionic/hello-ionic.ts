@@ -9,7 +9,7 @@ import { ListPage } from '../list/list';
 @Component({
   selector: 'page-hello-ionic',
   templateUrl: 'hello-ionic.html',
-   //styleUrls: ['hello-ionic.scss'],
+  
 })
 
 
