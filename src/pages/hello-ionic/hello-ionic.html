@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Hello Ionic</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding class="login" >
+
+ <ion-item>
+    <ion-label color="primary" floating>Nombre de usuario</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+   <ion-item>
+    <ion-label color="primary" floating>Contrasena</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+
+
+<button ion-button  block (click)="openRestpage()"  >Ingresar</button>
+
+
+<button ion-button   block (click)="showPrompt()" >Registrarse</button>
+
+
+
+</ion-content>
