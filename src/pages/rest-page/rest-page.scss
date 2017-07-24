@@ -9,27 +9,15 @@ page-rest-page{
      border: none;
     background-color: #4CAF50; 
   }
-  ion-card {
-    position: relative;
-    text-align: center;
+  .ion-card {
+    width: 50%;
+   height: 50%;
+    position: absolute;
+  
   }
 
-  .card-title {
-    position: absolute;
-    top: 36%;
-    font-size: 2.0em;
-    width: 100%;
-    font-weight: bold;
-    color: #fff;
-  }
-
-  .card-subtitle {
-    font-size: 1.0em;
-    position: absolute;
-    top: 52%;
-    width: 100%;
-    color: #fff;
-  }
+   
+ 
 
 }
 
