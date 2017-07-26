@@ -10,6 +10,7 @@ import { HttpModule } from '@angular/http';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import {RestPage} from '../pages/rest-page/rest-page';
+import { RequestDataProvider } from '../providers/request-data/request-data';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import {RestPage} from '../pages/rest-page/rest-page';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    RequestDataProvider
   ]
 })
 export class AppModule {}
