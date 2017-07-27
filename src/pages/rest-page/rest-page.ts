@@ -19,17 +19,21 @@ export class RestPage {
   public texto = 'por ahora';
   
   constructor(
-    public requestDataProvider:RequestDataProvider
+    public requestDataProvider: RequestDataProvider
    ){
   }
 
   ionViewDidLoad(){
-    this.requestDataProvider.getRemoteData();
- 
- 
-   
-   
+    this.loader.present();
+    //this.requestDataProvider.getRemoteData();
+    
+    
+    // this.loader.dismiss();
 
+    this.requestDataProvider.getRestaurente().subscribe(Restaurantes =>{
+
+    });
+ 
   }
 
 }
