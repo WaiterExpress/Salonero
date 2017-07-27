@@ -3,6 +3,8 @@ import { Component } from '@angular/core';
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 import {RequestDataProvider} from '../../providers/request-data/request-data';
+
+@IonicPage()
 @Component({
   selector: 'page-rest-page',
   templateUrl: 'rest-page.html',
@@ -13,12 +15,12 @@ import {RequestDataProvider} from '../../providers/request-data/request-data';
 
 export class RestPage {
   
-   posts: any;
-  texto = 'por ahora';
-  constructor(public requestDataProvider:RequestDataProvider){
-
-
-
+  public posts: any;
+  public texto = 'por ahora';
+  
+  constructor(
+    public requestDataProvider:RequestDataProvider
+   ){
   }
 
   ionViewDidLoad(){
