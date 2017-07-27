@@ -12,12 +12,18 @@ import 'rxjs/add/operator/map';
 export class RequestDataProvider {
 Posts: any;
 
+  public WaiterAPI: string;
 
   constructor(public http: Http) {
-    console.log('Hello RequestDataProvider Provider');
+    // this.WaiterAPI = "http://we.agroingenieriasatelital.com/";
+    this.WaiterAPI = "/WaiterAPI/";
   }
 
-
+  getRestaurente(){
+    return this.http.get('http://we.agroingenieriasatelital.com/obtener_restaurante.php')
+    .map( res => res.json() )
+  }
+  
   getRemoteData(){
 //this.http.get('https://www.reddit.com/r/gifs/new/.json?limit=10').subscribe(data=>{
   //console.log(data);
